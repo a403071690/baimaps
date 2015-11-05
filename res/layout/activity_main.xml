@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <Button 
+        android:id="@+id/bt_getlocat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="定位"
+        />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bt_getlocat"
+        android:layout_below="@+id/bt_getlocat"
+        android:layout_marginTop="26dp"
+		android:scrollbars = "vertical"
+        android:text="@string/tv_address" />
+
+      <com.baidu.mapapi.map.MapView
+          android:id="@+id/map_view"
+          android:layout_width="match_parent"
+          android:layout_height="250dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:clickable="true" >
+      </com.baidu.mapapi.map.MapView>
+
+</RelativeLayout>
